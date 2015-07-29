@@ -1,5 +1,5 @@
 var gulp    = require('gulp');
-var config  = require('laravel-elixir').config;
+var config  = require('developingo-elixir').config;
 var _       = require('underscore');
 
 
