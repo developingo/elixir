@@ -1,14 +1,14 @@
 {
-  "name": "laravel-elixir",
+  "name": "developingo-elixir",
   "version": "2.3.13",
-  "description": "Laravel Elixir Core",
+  "description": "Laravel Elixir without sass",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/laravel/elixir"
+    "url": "https://github.com/developingo/elixir"
   },
   "keywords": [
     "laravel",
@@ -16,10 +16,10 @@
     "gulp"
   ],
   "author": {
-    "name": "Taylor Otwell, Jeffrey Way"
+    "name": "Abraham Toriz"
   },
   "license": "MIT",
-  "homepage": "https://github.com/laravel/elixir",
+  "homepage": "https://github.com/developingo/elixir",
   "dependencies": {
     "babelify": "^6.0.0",
     "browserify": "^9.0.4",
