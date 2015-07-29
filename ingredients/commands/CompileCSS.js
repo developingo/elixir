@@ -19,16 +19,7 @@ var triggerCompiler = function(src, options) {
         config.sourcemaps, plugins.sourcemaps.init()
     );
 
-    // If we're using the Ruby version of Sass, then we need to
-    // trigger the Gulp task in a slightly different manner.
-
-    if (options.plugin == 'gulp-ruby-sass') {
-        var rubySass = require('gulp-ruby-sass')(src, pluginOptions);
-
-        stream = rubySass.pipe(toMaps);
-    } else {
-        stream = gulp.src(src).pipe(toMaps).pipe(compiler(pluginOptions));
-    }
+    stream = gulp.src(src).pipe(toMaps).pipe(compiler(pluginOptions));
 
     return stream.on('error', function(e) {
         var message = options.compiler + ' Compilation Failed!';
